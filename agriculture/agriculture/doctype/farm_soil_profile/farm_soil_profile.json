@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "creation": "2024-03-23 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "soil_type",
+  "area",
+  "area_percentage",
+  "ph_level",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Soil Type",
+   "options": "Loamy\nSandy Loam\nClay\nClay Loam\nSilty\nSilty Loam\nSandy\nPeaty\nChalky",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area",
+   "precision": "2"
+  },
+  {
+   "fieldname": "area_percentage",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Area %"
+  },
+  {
+   "fieldname": "ph_level",
+   "fieldtype": "Float",
+   "label": "pH Level",
+   "precision": "2"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "icon": "fa fa-flask",
+ "links": [],
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Soil Profile",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

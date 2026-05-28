@@ -1,0 +1,29 @@
+{
+ "creation": "2024-03-23 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "idx": 0,
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Monthly Equipment Usage",
+ "owner": "Administrator",
+ "chart_name": "Monthly Equipment Usage",
+ "chart_type": "Line",
+ "document_type": "Equipment Usage Log",
+ "based_on": "date",
+ "value_based_on": "hours_used",
+ "filters_json": "[[\"Equipment Usage Log\",\"docstatus\",\"=\",1,false]]",
+ "number_of_groups": 0,
+ "is_public": 1,
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "time_interval": "Monthly",
+ "is_standard": 1,
+ "source": "Equipment Usage Log",
+ "y_axis": [
+  {
+   "y_field": "hours_used"
+  }
+ ]
+}

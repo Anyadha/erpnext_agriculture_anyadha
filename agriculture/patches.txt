@@ -1,0 +1,10 @@
+[pre_model_sync]
+# Patches added in this section will be executed before doctypes are migrated
+# Read docs to understand patches: https://docs.frappe.io/framework/user/en/database-migrations
+
+[post_model_sync]
+# Patches added in this section will be executed after doctypes are migrated
+agriculture.patches.v0_0_2.sanitize_custom_script_reports
+agriculture.patches.v0_0_3.rename_input_roi_analysis_report
+agriculture.patches.v0_0_4.sync_agriculture_icons
+agriculture.patches.v0_0_5.add_jute_grower_to_workspace

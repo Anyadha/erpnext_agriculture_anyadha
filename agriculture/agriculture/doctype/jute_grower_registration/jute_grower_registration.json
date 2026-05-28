@@ -1,0 +1,417 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:JCI-ICARE-{####}",
+ "creation": "2026-01-21 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "form_details_section",
+  "form_no",
+  "scheme_phase",
+  "year",
+  "ro_name",
+  "icp_type",
+  "column_break_form",
+  "farmer_details_section",
+  "farmer_name",
+  "date_of_birth",
+  "gender",
+  "column_break_farmer",
+  "mobile_number",
+  "aadhaar_number",
+  "voter_epic_number",
+  "address_section",
+  "state",
+  "district",
+  "block",
+  "column_break_address",
+  "gram_panchayat",
+  "village",
+  "cultivation_details_section",
+  "was_associated_with_icare_before",
+  "was_jute_cultivated_last_year",
+  "column_break_cultivation",
+  "yield_per_bigha_last_year",
+  "total_land_bighas_this_year",
+  "consent_section",
+  "consent_given",
+  "consent_farmer_name",
+  "consent_father_name",
+  "consent_village_block_district",
+  "column_break_consent",
+  "consent_date",
+  "consent_place",
+  "registrar_section",
+  "registrar_name",
+  "registrar_designation",
+  "reporting_dpc_ro",
+  "validation_section",
+  "dpc_manager_name",
+  "dpc_name",
+  "dpc_signature_seal",
+  "authentication_section",
+  "regional_manager_name",
+  "ro_rld_name",
+  "rm_signature_seal",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "form_details_section",
+   "fieldtype": "Section Break",
+   "label": "Form Details"
+  },
+  {
+   "fieldname": "form_no",
+   "fieldtype": "Data",
+   "label": "Form No",
+   "description": "Format: JCI/ RO Name/ ICP-XII / New or Old / Form No",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "scheme_phase",
+   "fieldtype": "Select",
+   "label": "Scheme Phase",
+   "options": "Phase-I\nPhase-II\nPhase-III\nPhase-IV\nPhase-V\nPhase-VI\nPhase-VII\nPhase-VIII\nPhase-IX\nPhase-X\nPhase-XI\nPhase-XII",
+   "default": "Phase-XII",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "default": "2026",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ro_name",
+   "fieldtype": "Data",
+   "label": "RO Name"
+  },
+  {
+   "fieldname": "icp_type",
+   "fieldtype": "Select",
+   "label": "Registration Type",
+   "options": "\nNew\nOld"
+  },
+  {
+   "fieldname": "column_break_form",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farmer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer Details"
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_farmer",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "options": "Phone",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "aadhaar_number",
+   "fieldtype": "Data",
+   "label": "Aadhaar Number (Mandatory / Masked)",
+   "reqd": 1,
+   "description": "Enter masked Aadhaar e.g. XXXX-XXXX-1234"
+  },
+  {
+   "fieldname": "voter_epic_number",
+   "fieldtype": "Data",
+   "label": "Voter EPIC Number"
+  },
+  {
+   "fieldname": "address_section",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "Territory",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "options": "Territory",
+   "reqd": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "block",
+   "fieldtype": "Link",
+   "label": "Block",
+   "options": "Territory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_address",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gram_panchayat",
+   "fieldtype": "Link",
+   "label": "Gram Panchayat",
+   "options": "Territory"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Link",
+   "label": "Village",
+   "options": "Territory",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cultivation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cultivation Details"
+  },
+  {
+   "fieldname": "was_associated_with_icare_before",
+   "fieldtype": "Select",
+   "label": "Was Associated with ICARE Scheme Before?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "was_jute_cultivated_last_year",
+   "fieldtype": "Select",
+   "label": "Was Jute Cultivated Last Year?",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cultivation",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "yield_per_bigha_last_year",
+   "fieldtype": "Float",
+   "label": "Yield per Bigha Last Year (Quintals)"
+  },
+  {
+   "fieldname": "total_land_bighas_this_year",
+   "fieldtype": "Float",
+   "label": "Total Land (Bighas) for Cultivation This Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consent_section",
+   "fieldtype": "Section Break",
+   "label": "Consent"
+  },
+  {
+   "fieldname": "consent_given",
+   "fieldtype": "Check",
+   "label": "Consent Given",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consent_farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name (Consent)"
+  },
+  {
+   "fieldname": "consent_father_name",
+   "fieldtype": "Data",
+   "label": "Son / Daughter of"
+  },
+  {
+   "fieldname": "consent_village_block_district",
+   "fieldtype": "Small Text",
+   "label": "Resident of (Village / Block / District)"
+  },
+  {
+   "fieldname": "column_break_consent",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "consent_date",
+   "fieldtype": "Date",
+   "label": "Consent Date"
+  },
+  {
+   "fieldname": "consent_place",
+   "fieldtype": "Data",
+   "label": "Consent Place"
+  },
+  {
+   "fieldname": "registrar_section",
+   "fieldtype": "Section Break",
+   "label": "Registrar Details"
+  },
+  {
+   "fieldname": "registrar_name",
+   "fieldtype": "Data",
+   "label": "Registrar Name"
+  },
+  {
+   "fieldname": "registrar_designation",
+   "fieldtype": "Data",
+   "label": "Registrar Designation"
+  },
+  {
+   "fieldname": "reporting_dpc_ro",
+   "fieldtype": "Data",
+   "label": "Reporting DPC / RO"
+  },
+  {
+   "fieldname": "validation_section",
+   "fieldtype": "Section Break",
+   "label": "Validation Details"
+  },
+  {
+   "fieldname": "dpc_manager_name",
+   "fieldtype": "Data",
+   "label": "DPC Manager / In-charge Name"
+  },
+  {
+   "fieldname": "dpc_name",
+   "fieldtype": "Data",
+   "label": "DPC Name"
+  },
+  {
+   "fieldname": "dpc_signature_seal",
+   "fieldtype": "Attach Image",
+   "label": "DPC Signature with Seal Stamp"
+  },
+  {
+   "fieldname": "authentication_section",
+   "fieldtype": "Section Break",
+   "label": "Authentication Details"
+  },
+  {
+   "fieldname": "regional_manager_name",
+   "fieldtype": "Data",
+   "label": "Regional Manager Name"
+  },
+  {
+   "fieldname": "ro_rld_name",
+   "fieldtype": "Data",
+   "label": "RO / RLD Name"
+  },
+  {
+   "fieldname": "rm_signature_seal",
+   "fieldtype": "Attach Image",
+   "label": "Regional Manager Signature with Seal Stamp"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Jute Grower Registration",
+   "print_hide": 1,
+   "no_copy": 1,
+   "read_only": 1,
+   "hidden": 1
+  }
+ ],
+ "icon": "fa fa-leaf",
+ "idx": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-05-28 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Jute Grower Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "read": 1,
+   "report": 1,
+   "export": 1,
+   "role": "Agriculture Manager",
+   "submit": 1,
+   "cancel": 1,
+   "amend": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Draft"
+  },
+  {
+   "color": "Green",
+   "title": "Submitted"
+  },
+  {
+   "color": "Red",
+   "title": "Cancelled"
+  }
+ ],
+ "title_field": "farmer_name",
+ "track_changes": 1,
+ "track_seen": 1
+}

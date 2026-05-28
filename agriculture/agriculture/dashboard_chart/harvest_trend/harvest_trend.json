@@ -1,0 +1,29 @@
+{
+ "creation": "2024-03-23 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "idx": 0,
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Harvest Trend",
+ "owner": "Administrator",
+ "chart_name": "Harvest Trend",
+ "chart_type": "Line",
+ "document_type": "Harvest Record",
+ "based_on": "harvest_date",
+ "value_based_on": "quantity_harvested",
+ "filters_json": "[[\"Harvest Record\",\"docstatus\",\"=\",1,false]]",
+ "number_of_groups": 0,
+ "is_public": 1,
+ "timeseries": 1,
+ "timespan": "Last Year",
+ "time_interval": "Monthly",
+ "is_standard": 1,
+ "source": "Harvest Record",
+ "y_axis": [
+  {
+   "y_field": "quantity_harvested"
+  }
+ ]
+}

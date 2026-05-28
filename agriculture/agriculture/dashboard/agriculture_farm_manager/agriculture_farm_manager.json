@@ -1,0 +1,42 @@
+{
+ "creation": "2024-03-23 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "name": "Agriculture Farm Manager",
+ "owner": "Administrator",
+ "dashboard_name": "Agriculture Farm Manager",
+ "is_standard": 1,
+ "is_default": 0,
+ "module": "Agriculture",
+ "charts": [
+  {
+   "chart": "Field Status Distribution",
+   "width": "Half"
+  },
+  {
+   "chart": "Monthly Equipment Usage",
+   "width": "Half"
+  },
+  {
+   "chart": "Harvest Trend",
+   "width": "Full"
+  }
+ ],
+ "cards": [
+  {
+   "card": "Total Fields"
+  },
+  {
+   "card": "Pending Harvests"
+  },
+  {
+   "card": "Fields Ready to Sow"
+  },
+  {
+   "card": "Total Harvest This Month"
+  }
+ ]
+}

@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-03-23 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "basic_details_section",
+  "date",
+  "asset",
+  "asset_name",
+  "asset_category",
+  "column_break_basic",
+  "farm",
+  "field",
+  "crop_project",
+  "task",
+  "operation_section",
+  "operator",
+  "activity_description",
+  "usage_details_section",
+  "start_hour_meter_reading",
+  "end_hour_meter_reading",
+  "hours_used",
+  "column_break_usage",
+  "odometer_start",
+  "odometer_end",
+  "distance_km",
+  "fuel_section",
+  "fuel_consumed",
+  "fuel_uom",
+  "fuel_stock_entry",
+  "column_break_fuel",
+  "fuel_cost",
+  "operating_cost_per_hour",
+  "total_operating_cost",
+  "additional_section",
+  "notes",
+  "status_section",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "EQL-.YYYY.-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Asset",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "label": "Asset Name",
+   "read_only": 1,
+   "fetch_from": "asset.asset_name"
+  },
+  {
+   "fieldname": "asset_category",
+   "fieldtype": "Link",
+   "label": "Asset Category",
+   "options": "Asset Category",
+   "read_only": 1,
+   "fetch_from": "asset.asset_category"
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Farm",
+   "options": "Farm"
+  },
+  {
+   "fieldname": "field",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Field",
+   "options": "Field"
+  },
+  {
+   "fieldname": "crop_project",
+   "fieldtype": "Link",
+   "label": "Crop Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Link",
+   "label": "Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "operation_section",
+   "fieldtype": "Section Break",
+   "label": "Operation"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Operator",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_description",
+   "fieldtype": "Small Text",
+   "label": "Activity Description"
+  },
+  {
+   "fieldname": "usage_details_section",
+   "fieldtype": "Section Break",
+   "label": "Usage Details"
+  },
+  {
+   "fieldname": "start_hour_meter_reading",
+   "fieldtype": "Float",
+   "label": "Start Hour Meter Reading",
+   "precision": "2"
+  },
+  {
+   "fieldname": "end_hour_meter_reading",
+   "fieldtype": "Float",
+   "label": "End Hour Meter Reading",
+   "precision": "2"
+  },
+  {
+   "fieldname": "hours_used",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Hours Used",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_usage",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "odometer_start",
+   "fieldtype": "Float",
+   "label": "Odometer Start (km)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "odometer_end",
+   "fieldtype": "Float",
+   "label": "Odometer End (km)",
+   "precision": "2"
+  },
+  {
+   "fieldname": "distance_km",
+   "fieldtype": "Float",
+   "label": "Distance (km)",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fuel_section",
+   "fieldtype": "Section Break",
+   "label": "Fuel & Cost"
+  },
+  {
+   "fieldname": "fuel_consumed",
+   "fieldtype": "Float",
+   "label": "Fuel Consumed",
+   "precision": "2"
+  },
+  {
+   "fieldname": "fuel_uom",
+   "fieldtype": "Link",
+   "label": "Fuel UOM",
+   "options": "UOM",
+   "default": "Litre"
+  },
+  {
+   "fieldname": "fuel_stock_entry",
+   "fieldtype": "Link",
+   "label": "Fuel Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fuel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fuel_cost",
+   "fieldtype": "Currency",
+   "label": "Fuel Cost"
+  },
+  {
+   "fieldname": "operating_cost_per_hour",
+   "fieldtype": "Currency",
+   "label": "Operating Cost per Hour"
+  },
+  {
+   "fieldname": "total_operating_cost",
+   "fieldtype": "Currency",
+   "label": "Total Operating Cost",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nCancelled",
+   "default": "Draft"
+  }
+ ],
+ "icon": "fa fa-cogs",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Equipment Usage Log",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1,
+   "cancel": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1,
+   "cancel": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "creation": "2024-03-23 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year",
+  "season",
+  "crop",
+  "variety",
+  "sowing_date",
+  "harvest_date",
+  "yield_per_unit_area",
+  "total_yield",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "season",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Rabi\nKharif\nZaid\nSummer\nWinter\nSpring\nFall",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Crop",
+   "reqd": 1
+  },
+  {
+   "fieldname": "variety",
+   "fieldtype": "Data",
+   "label": "Variety"
+  },
+  {
+   "fieldname": "sowing_date",
+   "fieldtype": "Date",
+   "label": "Sowing Date"
+  },
+  {
+   "fieldname": "harvest_date",
+   "fieldtype": "Date",
+   "label": "Harvest Date"
+  },
+  {
+   "fieldname": "yield_per_unit_area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Yield per Unit Area",
+   "precision": "2"
+  },
+  {
+   "fieldname": "total_yield",
+   "fieldtype": "Float",
+   "label": "Total Yield",
+   "precision": "2"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "istable": 1,
+ "icon": "fa fa-history",
+ "links": [],
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Field Crop History",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

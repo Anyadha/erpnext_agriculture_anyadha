@@ -1,0 +1,10 @@
+{
+ "name": "Input ROI Analysis",
+ "doctype": "Report",
+ "ref_doctype": "Project",
+ "report_name": "Input ROI Analysis",
+ "report_type": "Script Report",
+ "is_standard": "Yes",
+ "module": "Agriculture",
+ "disabled": 0
+}

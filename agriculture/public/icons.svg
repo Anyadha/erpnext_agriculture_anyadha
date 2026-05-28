@@ -1,0 +1,47 @@
+<svg width="0" height="0" class="hidden">
+  <!-- Primary icon ID for Frappe -->
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="agriculture">
+    <!-- Wheat/Grain stalk icon for Agriculture -->
+    <g fill="currentColor">
+      <!-- Main stem -->
+      <rect x="11" y="4" width="2" height="16" rx="1"/>
+
+      <!-- Wheat grains - left side -->
+      <ellipse cx="8" cy="7" rx="2" ry="3" opacity="0.9"/>
+      <ellipse cx="8.5" cy="10" rx="2" ry="3" opacity="0.9"/>
+      <ellipse cx="9" cy="13" rx="2" ry="3" opacity="0.9"/>
+      <ellipse cx="9.5" cy="16" rx="2" ry="3" opacity="0.9"/>
+
+      <!-- Wheat grains - right side -->
+      <ellipse cx="16" cy="7" rx="2" ry="3" opacity="0.9"/>
+      <ellipse cx="15.5" cy="10" rx="2" ry="3" opacity="0.9"/>
+      <ellipse cx="15" cy="13" rx="2" ry="3" opacity="0.9"/>
+      <ellipse cx="14.5" cy="16" rx="2" ry="3" opacity="0.9"/>
+
+      <!-- Wheat awns (thin lines) -->
+      <line x1="7" y1="7" x2="5" y2="5" stroke="currentColor" stroke-width="0.5" opacity="0.7"/>
+      <line x1="7.5" y1="10" x2="5.5" y2="9" stroke="currentColor" stroke-width="0.5" opacity="0.7"/>
+      <line x1="17" y1="7" x2="19" y2="5" stroke="currentColor" stroke-width="0.5" opacity="0.7"/>
+      <line x1="16.5" y1="10" x2="18.5" y2="9" stroke="currentColor" stroke-width="0.5" opacity="0.7"/>
+
+      <!-- Bottom leaves -->
+      <path d="M 12 20 Q 8 21 6 22" stroke="currentColor" stroke-width="1" fill="none" opacity="0.7"/>
+      <path d="M 12 20 Q 16 21 18 22" stroke="currentColor" stroke-width="1" fill="none" opacity="0.7"/>
+    </g>
+  </symbol>
+
+  <!-- Alias for backward compatibility -->
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="icon-agriculture">
+    <use href="#agriculture"/>
+  </symbol>
+
+  <!-- Alternative simpler icon -->
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="crop">
+    <path fill="currentColor" d="M12 2C11.45 2 11 2.45 11 3V4H7C6.45 4 6 4.45 6 5C6 5.55 6.45 6 7 6H11V18H7C6.45 18 6 18.45 6 19C6 19.55 6.45 20 7 20H11V21C11 21.55 11.45 22 12 22C12.55 22 13 21.55 13 21V20H17C17.55 20 18 19.55 18 19C18 18.45 17.55 18 17 18H13V6H17C17.55 6 18 5.55 18 5C18 4.45 17.55 4 17 4H13V3C13 2.45 12.55 2 12 2Z"/>
+    <!-- Wheat grains around the cross -->
+    <circle cx="8" cy="8" r="1.5" fill="currentColor" opacity="0.8"/>
+    <circle cx="16" cy="8" r="1.5" fill="currentColor" opacity="0.8"/>
+    <circle cx="8" cy="16" r="1.5" fill="currentColor" opacity="0.8"/>
+    <circle cx="16" cy="16" r="1.5" fill="currentColor" opacity="0.8"/>
+  </symbol>
+</svg>

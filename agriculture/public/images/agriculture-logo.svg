@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#4CAF50" stroke="#2E7D32" stroke-width="2"/>
+
+  <!-- Wheat/Grain stalk -->
+  <g transform="translate(50, 50)">
+    <!-- Main stem -->
+    <line x1="0" y1="15" x2="0" y2="-15" stroke="#FFF" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Wheat grains - left side -->
+    <ellipse cx="-6" cy="-12" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+    <ellipse cx="-5" cy="-6" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+    <ellipse cx="-4" cy="0" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+    <ellipse cx="-3" cy="6" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+
+    <!-- Wheat grains - right side -->
+    <ellipse cx="6" cy="-12" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+    <ellipse cx="5" cy="-6" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+    <ellipse cx="4" cy="0" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+    <ellipse cx="3" cy="6" rx="4" ry="6" fill="#FFD54F" stroke="#FFF" stroke-width="1"/>
+
+    <!-- Wheat awns (thin lines extending from grains) -->
+    <line x1="-8" y1="-12" x2="-12" y2="-18" stroke="#FFF" stroke-width="1" opacity="0.7"/>
+    <line x1="-7" y1="-6" x2="-11" y2="-10" stroke="#FFF" stroke-width="1" opacity="0.7"/>
+    <line x1="8" y1="-12" x2="12" y2="-18" stroke="#FFF" stroke-width="1" opacity="0.7"/>
+    <line x1="7" y1="-6" x2="11" y2="-10" stroke="#FFF" stroke-width="1" opacity="0.7"/>
+  </g>
+
+  <!-- Bottom leaves -->
+  <path d="M 50 65 Q 35 70 30 75" stroke="#81C784" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M 50 65 Q 65 70 70 75" stroke="#81C784" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

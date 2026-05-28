@@ -1,0 +1,17 @@
+{
+ "creation": "2024-03-23 12:30:00.000000",
+ "docstatus": 0,
+ "doctype": "Server Script",
+ "dt": "Timesheet",
+ "enabled": 1,
+ "event_frequency": "All",
+ "module": "Agriculture",
+ "name": "Update Project Cost from Timesheet",
+ "reference_doctype": "Timesheet",
+ "script_type": "DocType Event",
+ "event": "on_submit",
+ "script": "# Update Project total_costing_amount when Timesheet is submitted\n# Check if any timesheet details have a project\nproject_costs = {}\n\nfor detail in doc.time_logs:\n\tif detail.project:\n\t\tif detail.project not in project_costs:\n\t\t\tproject_costs[detail.project] = 0\n\t\t\n\t\t# Add costing amount for this detail\n\t\tif detail.costing_amount:\n\t\t\tproject_costs[detail.project] += detail.costing_amount\n\n# Update each project\nfor project_name, cost in project_costs.items():\n\tif cost > 0:\n\t\tproject = frappe.get_doc(\"Project\", project_name)\n\t\t\n\t\t# Add to existing costing amount\n\t\tcurrent_cost = project.get(\"total_costing_amount\") or 0\n\t\tproject.total_costing_amount = current_cost + cost\n\t\t\n\t\t# Save without triggering events\n\t\tproject.flags.ignore_validate_update_after_submit = True\n\t\tproject.save(ignore_permissions=True)\n\t\t\n\t\tfrappe.msgprint(f\"Updated project {project_name} cost by {cost}\")\n",
+ "modified": "2024-03-23 12:30:00.000000",
+ "modified_by": "Administrator",
+ "owner": "Administrator"
+}

@@ -1,0 +1,17 @@
+{
+ "creation": "2024-03-23 12:30:00.000000",
+ "docstatus": 0,
+ "doctype": "Server Script",
+ "dt": "Project",
+ "enabled": 1,
+ "event_frequency": "All",
+ "module": "Agriculture",
+ "name": "Calculate Expected Total Yield",
+ "reference_doctype": "Project",
+ "script_type": "DocType Event",
+ "event": "Before Save",
+ "script": "# Auto-calculate expected total yield\nif doc.area_under_cultivation and doc.expected_yield_per_unit:\n\tdoc.expected_total_yield = doc.area_under_cultivation * doc.expected_yield_per_unit\n",
+ "modified": "2024-03-23 12:30:00.000000",
+ "modified_by": "Administrator",
+ "owner": "Administrator"
+}

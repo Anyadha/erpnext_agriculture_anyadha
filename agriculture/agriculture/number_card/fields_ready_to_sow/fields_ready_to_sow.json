@@ -1,0 +1,20 @@
+{
+ "creation": "2024-03-23 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Fields Ready to Sow",
+ "owner": "Administrator",
+ "type": "Document Type",
+ "document_type": "Field",
+ "function": "Count",
+ "filters_json": "[[\"Field\",\"current_status\",\"in\",[\"Vacant\",\"Harvested\"],false]]",
+ "label": "Fields Ready to Sow",
+ "color": "#4CAF50",
+ "show_percentage_stats": 0
+}

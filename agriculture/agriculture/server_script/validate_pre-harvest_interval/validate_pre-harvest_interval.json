@@ -1,0 +1,17 @@
+{
+ "creation": "2024-03-23 12:30:00.000000",
+ "docstatus": 0,
+ "doctype": "Server Script",
+ "dt": "Harvest Record",
+ "enabled": 1,
+ "event_frequency": "All",
+ "module": "Agriculture",
+ "name": "Validate Pre-Harvest Interval",
+ "reference_doctype": "Harvest Record",
+ "script_type": "DocType Event",
+ "event": "Before Submit",
+ "script": "# Validate Pre-Harvest Interval (PHI) compliance before harvest\nimport frappe\nfrom frappe import _\nfrom frappe.utils import getdate, date_diff\n\nif doc.crop_project and doc.field:\n\t# Get last spray operation for this field\n\tspray_logs = frappe.get_all(\"Field Operation Log\",\n\t\tfilters={\n\t\t\t\"field\": doc.field,\n\t\t\t\"crop_project\": doc.crop_project,\n\t\t\t\"operation_type\": \"Spraying\",\n\t\t\t\"docstatus\": 1\n\t\t},\n\t\tfields=[\"name\", \"operation_date\", \"pre_harvest_interval_days\"],\n\t\torder_by=\"operation_date desc\",\n\t\tlimit=1\n\t)\n\t\n\tif spray_logs:\n\t\tlast_spray = spray_logs[0]\n\t\tif last_spray.pre_harvest_interval_days:\n\t\t\tphi_days = last_spray.pre_harvest_interval_days\n\t\t\tdays_since_spray = date_diff(doc.harvest_date, last_spray.operation_date)\n\t\t\t\n\t\t\tif days_since_spray < phi_days:\n\t\t\t\terror_msg = f\"Pre-Harvest Interval (PHI) violation! Last spray: {last_spray.operation_date}, PHI Required: {phi_days} days, Days since spray: {days_since_spray}. Cannot harvest before PHI period expires for food safety compliance.\"\n\t\t\t\tfrappe.throw(_(error_msg))\n",
+ "modified": "2024-03-23 12:30:00.000000",
+ "modified_by": "Administrator",
+ "owner": "Administrator"
+}

@@ -1,0 +1,427 @@
+{
+ "app": "agriculture",
+ "charts": [
+  {
+   "chart_name": "Field Status Distribution",
+   "label": "Field Status Distribution"
+  },
+  {
+   "chart_name": "Harvest Trend",
+   "label": "Harvest Trend"
+  },
+  {
+   "chart_name": "Crop Cycle Status",
+   "label": "Crop Cycle Status"
+  },
+  {
+   "chart_name": "Farm Wise Field Count",
+   "label": "Farm Wise Field Count"
+  },
+  {
+   "chart_name": "Monthly Equipment Usage",
+   "label": "Monthly Equipment Usage"
+  }
+ ],
+ "content": "[{\"id\":\"Anyadha\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h2\\\">Anyadha Agriculture 2026</span>\",\"col\":12}},{\"id\":\"Anyadha\",\"type\":\"paragraph\",\"data\":{\"text\":\"Operational agriculture workspace branded for Anyadha Technologies LLP, 2026 edition.\",\"col\":12}},{\"id\":\"mHwGTUvStf\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Farms\",\"col\":3}},{\"id\":\"3rbTkZAAyX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Active Farms\",\"col\":3}},{\"id\":\"ydZWznI4jR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Fields\",\"col\":3}},{\"id\":\"omIg0CDJ57\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Active Crop Cycles\",\"col\":3}},{\"id\":\"qV7BEyfepQ\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Fields Ready to Sow\",\"col\":4}},{\"id\":\"0VVJ04CGYX\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Pending Harvests\",\"col\":4}},{\"id\":\"5QshJeAcKc\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Harvest This Month\",\"col\":4}},{\"id\":\"4WVtccei8g\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Field Status Distribution\",\"col\":12}},{\"id\":\"fx8Dk3nOUz\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Harvest Trend\",\"col\":12}},{\"id\":\"KXlAFVWpuZ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Crop Cycle Status\",\"col\":12}},{\"id\":\"R3eacqWxdF\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Farm Wise Field Count\",\"col\":12}},{\"id\":\"sANOdCFH2d\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Monthly Equipment Usage\",\"col\":12}}]",
+ "creation": "2024-03-23 10:00:00",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "agriculture",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Agriculture 2026",
+ "links": [
+  {
+   "hidden": 0,
+   "icon": "database",
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Farm",
+   "link_count": 0,
+   "link_to": "Farm",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Field",
+   "link_count": 0,
+   "link_to": "Field",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Jute Grower Registration",
+   "link_count": 0,
+   "link_to": "Jute Grower Registration",
+   "link_type": "DocType",
+   "onboard": 1,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "clipboard-pen",
+   "is_query_report": 0,
+   "label": "Operations & Logs",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Field Operation Log",
+   "link_count": 0,
+   "link_to": "Field Operation Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Equipment Usage Log",
+   "link_count": 0,
+   "link_to": "Equipment Usage Log",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "wheat",
+   "is_query_report": 0,
+   "label": "Harvesting",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Harvest Record",
+   "link_count": 0,
+   "link_to": "Harvest Record",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "folder-kanban",
+   "is_query_report": 0,
+   "label": "Planning & Inventory",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Task",
+   "link_count": 0,
+   "link_to": "Task",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stock Entry",
+   "link_count": 0,
+   "link_to": "Stock Entry",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "shield-check",
+   "is_query_report": 0,
+   "label": "Compliance Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Spray Register",
+   "link_count": 0,
+   "link_to": "Spray Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Fertilizer Register",
+   "link_count": 0,
+   "link_to": "Fertilizer Register",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "chart-column",
+   "is_query_report": 0,
+   "label": "Operational Reports",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Field Utilization Report",
+   "link_count": 0,
+   "link_to": "Field Utilization Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Harvest Report",
+   "link_count": 0,
+   "link_to": "Harvest Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Labor Utilization Report",
+   "link_count": 0,
+   "link_to": "Labor Utilization Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Machinery Usage Report",
+   "link_count": 0,
+   "link_to": "Machinery Usage Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Irrigation History Report",
+   "link_count": 0,
+   "link_to": "Irrigation History Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Sowing Progress Report",
+   "link_count": 0,
+   "link_to": "Sowing Progress Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Input Consumption Report",
+   "link_count": 0,
+   "link_to": "Input Consumption Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "chart-line",
+   "is_query_report": 0,
+   "label": "Financial & Analytics",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Crop Profitability Report",
+   "link_count": 0,
+   "link_to": "Crop Profitability Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Yield Variance Report",
+   "link_count": 0,
+   "link_to": "Yield Variance Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Input ROI Analysis",
+   "link_count": 0,
+   "link_to": "Input ROI Analysis",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Equipment Efficiency Report",
+   "link_count": 0,
+   "link_to": "Equipment Efficiency Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Farm Budget Variance",
+   "link_count": 0,
+   "link_to": "Farm Budget Variance",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "settings",
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 0,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Agriculture Settings",
+   "link_count": 0,
+   "link_to": "Agriculture Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-03-23 18:52:46.739104",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Agriculture",
+ "number_cards": [
+  {
+   "label": "Total Farms",
+   "number_card_name": "Total Farms"
+  },
+  {
+   "label": "Total Active Farms",
+   "number_card_name": "Total Active Farms"
+  },
+  {
+   "label": "Total Fields",
+   "number_card_name": "Total Fields"
+  },
+  {
+   "label": "Active Crop Cycles",
+   "number_card_name": "Active Crop Cycles"
+  },
+  {
+   "label": "Fields Ready to Sow",
+   "number_card_name": "Fields Ready to Sow"
+  },
+  {
+   "label": "Pending Harvests",
+   "number_card_name": "Pending Harvests"
+  },
+  {
+   "label": "Total Harvest This Month",
+   "number_card_name": "Total Harvest This Month"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 20.0,
+ "shortcuts": [],
+ "title": "Anyadha Agriculture 2026",
+ "type": "Workspace"
+}

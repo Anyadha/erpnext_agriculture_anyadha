@@ -1,0 +1,298 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-03-23 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "basic_details_section",
+  "date",
+  "farm",
+  "field",
+  "crop_project",
+  "column_break_basic",
+  "operation_type",
+  "activity_description",
+  "area_covered",
+  "operator_details_section",
+  "operator_supervisor",
+  "weather_conditions",
+  "column_break_operator",
+  "stage_of_crop",
+  "crop_observations_section",
+  "pest_observation",
+  "disease_observation",
+  "nutrient_deficiency",
+  "weed_pressure",
+  "column_break_observation",
+  "growth_observation",
+  "observations",
+  "recommended_action",
+  "attachments_section",
+  "photos",
+  "linked_documents_section",
+  "linked_task",
+  "linked_stock_entry",
+  "linked_timesheet",
+  "column_break_linked",
+  "linked_equipment_usage_log",
+  "status_section",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "FOP-.YYYY.-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "field",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Field",
+   "options": "Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_project",
+   "fieldtype": "Link",
+   "label": "Crop Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "operation_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Operation Type",
+   "options": "Land Preparation\nSowing\nTransplanting\nIrrigation\nFertilizer Application\nPesticide Application\nHerbicide Application\nFungicide Application\nWeeding\nPruning\nScouting\nHarvest\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activity_description",
+   "fieldtype": "Small Text",
+   "label": "Activity Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_covered",
+   "fieldtype": "Float",
+   "label": "Area Covered",
+   "description": "If operation was for partial field",
+   "precision": "2"
+  },
+  {
+   "fieldname": "operator_details_section",
+   "fieldtype": "Section Break",
+   "label": "Operator Details"
+  },
+  {
+   "fieldname": "operator_supervisor",
+   "fieldtype": "Link",
+   "label": "Operator/Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "weather_conditions",
+   "fieldtype": "Data",
+   "label": "Weather Conditions",
+   "description": "e.g., Sunny 25°C, Rainy, Cloudy"
+  },
+  {
+   "fieldname": "column_break_operator",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stage_of_crop",
+   "fieldtype": "Select",
+   "label": "Stage of Crop",
+   "options": "\nGermination\nSeedling\nVegetative\nTillering\nStem Extension\nFlowering\nFruiting\nMaturity\nHarvested"
+  },
+  {
+   "fieldname": "crop_observations_section",
+   "fieldtype": "Section Break",
+   "label": "Crop Observations"
+  },
+  {
+   "fieldname": "pest_observation",
+   "fieldtype": "Small Text",
+   "label": "Pest Observation"
+  },
+  {
+   "fieldname": "disease_observation",
+   "fieldtype": "Small Text",
+   "label": "Disease Observation"
+  },
+  {
+   "fieldname": "nutrient_deficiency",
+   "fieldtype": "Small Text",
+   "label": "Nutrient Deficiency"
+  },
+  {
+   "fieldname": "weed_pressure",
+   "fieldtype": "Select",
+   "label": "Weed Pressure",
+   "options": "\nNone\nLow\nModerate\nHigh"
+  },
+  {
+   "fieldname": "column_break_observation",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "growth_observation",
+   "fieldtype": "Small Text",
+   "label": "Growth Observation"
+  },
+  {
+   "fieldname": "observations",
+   "fieldtype": "Text Editor",
+   "label": "General Observations"
+  },
+  {
+   "fieldname": "recommended_action",
+   "fieldtype": "Small Text",
+   "label": "Recommended Action"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Attach Image",
+   "label": "Photos"
+  },
+  {
+   "fieldname": "linked_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Documents",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "linked_task",
+   "fieldtype": "Link",
+   "label": "Linked Task",
+   "options": "Task"
+  },
+  {
+   "fieldname": "linked_stock_entry",
+   "fieldtype": "Link",
+   "label": "Linked Stock Entry",
+   "options": "Stock Entry"
+  },
+  {
+   "fieldname": "linked_timesheet",
+   "fieldtype": "Link",
+   "label": "Linked Timesheet",
+   "options": "Timesheet"
+  },
+  {
+   "fieldname": "column_break_linked",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "linked_equipment_usage_log",
+   "fieldtype": "Link",
+   "label": "Linked Equipment Usage Log",
+   "options": "Equipment Usage Log"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nSubmitted\nCancelled",
+   "default": "Draft"
+  }
+ ],
+ "icon": "fa fa-clipboard",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Field Operation Log",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1,
+   "cancel": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1,
+   "cancel": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

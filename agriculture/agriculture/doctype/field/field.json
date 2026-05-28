@@ -1,0 +1,261 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:field_id",
+ "creation": "2024-03-23 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_section",
+  "field_id",
+  "field_name",
+  "farm",
+  "column_break_basic",
+  "block_sector",
+  "area",
+  "area_uom",
+  "location_section",
+  "gps_coordinates",
+  "gps_polygon",
+  "soil_and_irrigation_section",
+  "soil_type",
+  "ph_level",
+  "column_break_soil",
+  "irrigation_source",
+  "irrigation_method",
+  "current_status_section",
+  "current_status",
+  "current_crop",
+  "current_crop_project",
+  "column_break_current",
+  "last_crop",
+  "last_harvest_date",
+  "days_vacant",
+  "crop_history_section",
+  "crop_rotation_history",
+  "additional_section",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "field_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field ID",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "field_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Field Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "block_sector",
+   "fieldtype": "Data",
+   "label": "Block/Sector"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Area",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_uom",
+   "fieldtype": "Link",
+   "label": "Area UOM",
+   "options": "UOM",
+   "default": "Acre"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "gps_coordinates",
+   "fieldtype": "Data",
+   "label": "GPS Coordinates (Center)",
+   "description": "Format: Latitude, Longitude"
+  },
+  {
+   "fieldname": "gps_polygon",
+   "fieldtype": "Long Text",
+   "label": "GPS Polygon (Boundary)",
+   "description": "JSON array of coordinates defining field boundary"
+  },
+  {
+   "fieldname": "soil_and_irrigation_section",
+   "fieldtype": "Section Break",
+   "label": "Soil and Irrigation"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "label": "Soil Type",
+   "options": "Loamy\nSandy Loam\nClay\nClay Loam\nSilty\nSilty Loam\nSandy\nPeaty\nChalky"
+  },
+  {
+   "fieldname": "ph_level",
+   "fieldtype": "Float",
+   "label": "pH Level",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_soil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "irrigation_source",
+   "fieldtype": "Data",
+   "label": "Irrigation Source",
+   "description": "e.g., Tube Well TW-3, Canal, Reservoir"
+  },
+  {
+   "fieldname": "irrigation_method",
+   "fieldtype": "Select",
+   "label": "Irrigation Method",
+   "options": "\nDrip\nSprinkler\nFlood\nFurrow\nCenter Pivot\nRainfed"
+  },
+  {
+   "fieldname": "current_status_section",
+   "fieldtype": "Section Break",
+   "label": "Current Status"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Current Status",
+   "options": "Vacant\nUnder Preparation\nSown\nGrowing\nHarvested\nFallow",
+   "default": "Vacant"
+  },
+  {
+   "fieldname": "current_crop",
+   "fieldtype": "Link",
+   "label": "Current Crop",
+   "options": "Item"
+  },
+  {
+   "fieldname": "current_crop_project",
+   "fieldtype": "Link",
+   "label": "Current Crop Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_current",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_crop",
+   "fieldtype": "Data",
+   "label": "Last Crop"
+  },
+  {
+   "fieldname": "last_harvest_date",
+   "fieldtype": "Date",
+   "label": "Last Harvest Date"
+  },
+  {
+   "fieldname": "days_vacant",
+   "fieldtype": "Int",
+   "label": "Days Vacant",
+   "read_only": 1
+  },
+  {
+   "fieldname": "crop_history_section",
+   "fieldtype": "Section Break",
+   "label": "Crop History"
+  },
+  {
+   "fieldname": "crop_rotation_history",
+   "fieldtype": "Table",
+   "label": "Crop Rotation History",
+   "options": "Field Crop History"
+  },
+  {
+   "fieldname": "additional_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  }
+ ],
+ "icon": "fa fa-th-large",
+ "links": [],
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Field",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

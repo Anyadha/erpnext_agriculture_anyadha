@@ -1,0 +1,23 @@
+{
+ "creation": "2024-03-23 10:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "idx": 0,
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Wise Field Count",
+ "owner": "Administrator",
+ "chart_name": "Farm Wise Field Count",
+ "chart_type": "Bar",
+ "document_type": "Field",
+ "based_on": "farm",
+ "filters_json": "[]",
+ "number_of_groups": 10,
+ "is_public": 1,
+ "timeseries": 0,
+ "is_standard": 1,
+ "source": "Field",
+ "timespan": "Last Year",
+ "time_interval": "Monthly"
+}

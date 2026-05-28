@@ -1,0 +1,316 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-03-23 10:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "basic_details_section",
+  "harvest_date",
+  "farm",
+  "field",
+  "crop_project",
+  "column_break_basic",
+  "crop",
+  "area_harvested",
+  "harvest_details_section",
+  "quantity_harvested",
+  "uom",
+  "wastage_loss",
+  "column_break_harvest",
+  "moisture_percent",
+  "actual_yield_per_unit_area",
+  "quality_grading_section",
+  "grade_distribution",
+  "labor_details_section",
+  "harvest_team",
+  "contractor",
+  "contractor_cost",
+  "equipment_section",
+  "equipment_used",
+  "warehouse_section",
+  "target_warehouse",
+  "batch_no",
+  "column_break_warehouse",
+  "stock_entry",
+  "quality_inspection",
+  "additional_section",
+  "notes",
+  "photos",
+  "status_section",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HRV-.YYYY.-.####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "basic_details_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Details"
+  },
+  {
+   "fieldname": "harvest_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Harvest Date",
+   "reqd": 1,
+   "default": "Today"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fieldname": "field",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Field",
+   "options": "Field",
+   "reqd": 1
+  },
+  {
+   "fieldname": "crop_project",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Crop Project",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_basic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "area_harvested",
+   "fieldtype": "Float",
+   "label": "Area Harvested",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "harvest_details_section",
+   "fieldtype": "Section Break",
+   "label": "Harvest Details"
+  },
+  {
+   "fieldname": "quantity_harvested",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity Harvested (Total)",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "wastage_loss",
+   "fieldtype": "Float",
+   "label": "Wastage/Loss",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_harvest",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "moisture_percent",
+   "fieldtype": "Float",
+   "label": "Moisture %",
+   "precision": "2"
+  },
+  {
+   "fieldname": "actual_yield_per_unit_area",
+   "fieldtype": "Float",
+   "label": "Actual Yield per Unit Area",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality_grading_section",
+   "fieldtype": "Section Break",
+   "label": "Quality Grading"
+  },
+  {
+   "fieldname": "grade_distribution",
+   "fieldtype": "Table",
+   "label": "Grade Distribution",
+   "options": "Harvest Grade Distribution"
+  },
+  {
+   "fieldname": "labor_details_section",
+   "fieldtype": "Section Break",
+   "label": "Labor Details"
+  },
+  {
+   "fieldname": "harvest_team",
+   "fieldtype": "Table",
+   "label": "Harvest Team",
+   "options": "Harvest Team Member"
+  },
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "contractor_cost",
+   "fieldtype": "Currency",
+   "label": "Contractor Cost"
+  },
+  {
+   "fieldname": "equipment_section",
+   "fieldtype": "Section Break",
+   "label": "Equipment Used"
+  },
+  {
+   "fieldname": "equipment_used",
+   "fieldtype": "Table",
+   "label": "Equipment Used",
+   "options": "Harvest Equipment"
+  },
+  {
+   "fieldname": "warehouse_section",
+   "fieldtype": "Section Break",
+   "label": "Warehouse & Stock"
+  },
+  {
+   "fieldname": "target_warehouse",
+   "fieldtype": "Link",
+   "label": "Target Warehouse",
+   "options": "Warehouse",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Data",
+   "label": "Batch No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_warehouse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_entry",
+   "fieldtype": "Link",
+   "label": "Stock Entry",
+   "options": "Stock Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "quality_inspection",
+   "fieldtype": "Link",
+   "label": "Quality Inspection",
+   "options": "Quality Inspection",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Information"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Attach Image",
+   "label": "Photos"
+  },
+  {
+   "fieldname": "status_section",
+   "fieldtype": "Section Break",
+   "label": "Status"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPending Verification\nVerified\nCompleted\nCancelled",
+   "default": "Draft"
+  }
+ ],
+ "icon": "fa fa-archive",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-03-23 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Harvest Record",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1,
+   "cancel": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1,
+   "cancel": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Agriculture User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
